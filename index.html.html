@@ -7,10 +7,28 @@
 
   <!-- Smooth scroll -->
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @keyframes floatSlow {
+    0% { transform: translateY(0px) scale(1); }
+    100% { transform: translateY(-30px) scale(1.05); }
+  }
+
+  @keyframes smoke {
+    0% { opacity: 0.3; transform: translateY(0); }
+    100% { opacity: 0.6; transform: translateY(-40px); }
+  }
+
+  .hero-bg {
+    animation: floatSlow 20s ease-in-out infinite alternate;
+  }
+
+  .smoke {
+    animation: smoke 8s ease-in-out infinite alternate;
+  }
+</style>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;900&family=Manrope:wght@400;500;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
