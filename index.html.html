@@ -1,277 +1,75 @@
 <!DOCTYPE html>
+<html class="dark" lang="en">
 
-<html class="dark" lang="en"><<style>
-html {
-  scroll-behavior: smooth;
-}
-</style>>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;900&amp;family=Manrope:wght@400;500;600;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "tertiary-fixed": "#e5e2e1",
-                    "secondary-container": "#c3f400",
-                    "surface-tint": "#e9c349",
-                    "secondary-fixed": "#c3f400",
-                    "tertiary-container": "#b5b2b2",
-                    "error": "#ffb4ab",
-                    "tertiary": "#d0cecd",
-                    "surface-container-lowest": "#0e0e0e",
-                    "surface-bright": "#3a3939",
-                    "surface-container-highest": "#353534",
-                    "inverse-surface": "#e5e2e1",
-                    "surface-container-low": "#1c1b1b",
-                    "surface-container-high": "#2a2a2a",
-                    "outline-variant": "#4d4635",
-                    "on-primary-container": "#554300",
-                    "on-secondary-fixed": "#161e00",
-                    "error-container": "#93000a",
-                    "background": "#131313",
-                    "primary-fixed": "#ffe088",
-                    "on-tertiary": "#313030",
-                    "surface-variant": "#353534",
-                    "outline": "#99907c",
-                    "surface-container": "#201f1f",
-                    "on-surface-variant": "#d0c5af",
-                    "inverse-on-surface": "#313030",
-                    "on-secondary-fixed-variant": "#3c4d00",
-                    "primary-container": "#d4af37",
-                    "on-error-container": "#ffdad6",
-                    "on-background": "#e5e2e1",
-                    "tertiary-fixed-dim": "#c8c6c5",
-                    "surface": "#131313",
-                    "primary-fixed-dim": "#e9c349",
-                    "inverse-primary": "#735c00",
-                    "on-tertiary-fixed-variant": "#474646",
-                    "on-secondary": "#283500",
-                    "on-primary": "#3c2f00",
-                    "secondary": "#ffffff",
-                    "on-tertiary-fixed": "#1c1b1b",
-                    "on-error": "#690005",
-                    "primary": "#f2ca50",
-                    "surface-dim": "#131313",
-                    "secondary-fixed-dim": "#abd600",
-                    "on-primary-fixed": "#241a00",
-                    "on-tertiary-container": "#454545",
-                    "on-primary-fixed-variant": "#574500",
-                    "on-surface": "#e5e2e1",
-                    "on-secondary-container": "#556d00"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "fontFamily": {
-                    "headline": ["Epilogue"],
-                    "body": ["Manrope"],
-                    "label": ["Inter"]
-            }
-          },
-        },
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Smooth scroll -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;900&family=Manrope:wght@400;500;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "tertiary-fixed": "#e5e2e1",
+            "secondary-container": "#c3f400",
+            "surface-tint": "#e9c349",
+            "secondary-fixed": "#c3f400",
+            "tertiary-container": "#b5b2b2",
+            "error": "#fb4ab",
+            "tertiary": "#d0cecd",
+            "surface-container-lowest": "#0e0e0e",
+            "surface-bright": "#3a3939",
+            "surface-container-highest": "#353534",
+            "inverse-surface": "#e5e2e1",
+            "surface-container-low": "#1c1b1b",
+            "surface-container-high": "#2a2a2a",
+            "outline-variant": "#4d4635",
+            "on-primary-container": "#553800",
+            "on-secondary-fixed": "#161e00",
+            "error-container": "#93000a",
+            "background": "#131313",
+            "primary-fixed": "#ffe088",
+            "on-tertiary": "#313030",
+            "surface-variant": "#353534",
+            "outline": "#99907c",
+            "surface-container": "#201f1f",
+            "on-surface-variant": "#d0c5af",
+            "inverse-on-surface": "#313030",
+            "on-secondary-fixed-variant": "#3c4d00",
+            "primary-container": "#d4af37",
+            "on-error-container": "#ffdad6",
+            "on-background": "#e5e2e1",
+            "tertiary-fixed-dim": "#c8c6c5",
+            "surface": "#131313",
+            "primary-fixed-dim": "#e9c349",
+            "inverse-primary": "#735c00",
+            "on-tertiary-fixed-variant": "#474646",
+            "on-secondary": "#283500",
+            "on-primary": "#3c2f00",
+            "secondary": "#ffffff",
+            "on-tertiary-fixed": "#1c1b1b"
+          }
+        }
       }
-    </script>
-<style>.material-symbols-outlined {
-    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
     }
-.cinematic-glow {
-    text-shadow: 0 0 30px rgba(242, 202, 80, 0.4), 0 0 60px rgba(242, 202, 80, 0.2)
-    }
-.floating-particles {
-    background-image: radial-gradient(circle, #f2ca50 1px, transparent 1px);
-    background-size: 100px 100px
-    }
-.grain-overlay {
-    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuA8t5AwdicQFx-Q26aRiBU7RjhSAYwcRAxw0IK6WmARQ8WzQ1Jpbt0LvIu_4ueVk9isGldeCpfpDRqr-UZyoo_38x73pGw9wUJrsYvcGcj4NyKiDlVJUrX5Vu9RUqayAhxG6aW-HtOSkkmvMpV4od2MyoGqSC7r5eCJas0IPgLEtoSEZmHGq6Yl8P_Xxwpz2KizQhAumyGya_W4KVIyTX77dsfi30-MByG9RDZwAJWHbxO_3wiclfGVSxZ1jlTRYu2uvK0BwA3i0SI);
-    opacity: 0.05
-    }
-.reveal {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-.reveal.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-.hero-title {
-  opacity: 0;
-  transform: translateY(80px);
-}
-.hero-subtitle {
-  opacity: 0;
-  transform: translateY(40px);
-}
-.hero-buttons {
-  opacity: 0;
-  transform: translateY(40px);
-}
-.cinematic-glow {
-  animation: glowPulse 3s ease-in-out infinite alternate;
-}
-@keyframes glowPulse {
-  from {
-    text-shadow: 0 0 20px rgba(242, 202, 80, 0.25), 0 0 40px rgba(242, 202, 80, 0.15);
-  }
-  to {
-    text-shadow: 0 0 40px rgba(242, 202, 80, 0.55), 0 0 80px rgba(242, 202, 80, 0.3);
-  }
-}
+  </script>
 
-</style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
-<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
-<!-- TopNavBar Shell -->
-<nav class="fixed top-0 w-full z-50 bg-neutral-950/70 backdrop-blur-xl flex justify-between items-center px-12 py-6 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
-<div class="text-2xl font-black tracking-tighter text-[#f2ca50] font-headline">WEED O'CLOCK</div>
-<div class="hidden md:flex items-center space-x-12">
-<a class="font-['Epilogue'] tracking-tighter uppercase font-black text-[#f2ca50] border-b-2 border-[#f2ca50] pb-1 hover:scale-105 transition-all duration-300" href="#">LOOKBOOK</a>
-<a class="font-['Epilogue'] tracking-tighter uppercase font-black text-neutral-400 hover:text-[#f2ca50] transition-colors hover:scale-105 transition-all duration-300" href="#">STRAINS</a>
-<a class="font-['Epilogue'] tracking-tighter uppercase font-black text-neutral-400 hover:text-[#f2ca50] transition-colors hover:scale-105 transition-all duration-300" href="#">CURATION</a>
-<a class="font-['Epilogue'] tracking-tighter uppercase font-black text-neutral-400 hover:text-[#f2ca50] transition-colors hover:scale-105 transition-all duration-300" href="#">STORES</a>
-</div>
-<button class="font-['Epilogue'] tracking-tighter uppercase font-black bg-primary text-on-primary px-6 py-2 hover:scale-105 active:duration-75 transition-all duration-300">
-            MEMBER ACCESS
-        </button>
-</nav>
-<main class="relative h-screen w-full overflow-hidden flex items-center justify-center">
-<!-- Background Layers -->
-<div class="absolute inset-0 bg-surface-container-lowest z-0"></div>
-<div class="absolute inset-0 z-0 overflow-hidden">
-<div class="absolute -top-[20%] -left-[10%] w-[60%] h-[60%] bg-primary/10 rounded-full blur-[150px]"></div>
-<div class="absolute -bottom-[20%] -right-[10%] w-[50%] h-[50%] bg-secondary-container/5 rounded-full blur-[150px]"></div>
-</div>
-<!-- Texture & Smoke Simulation Placeholder -->
-<div class="absolute inset-0 z-10 grain-overlay pointer-events-none"></div>
-<div class="absolute inset-0 z-10 floating-particles opacity-20 animate-pulse pointer-events-none"></div>
-<!-- Background Imagery (Cinematic Mood) -->
-<div class="absolute inset-0 z-5">
-<img alt="" class="w-full h-full object-cover mix-blend-overlay opacity-40" data-alt="Moody cinematic close-up of swirling golden smoke and dark charcoal textures with dramatic side lighting and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkYQD9TdfCbvxlLgp5gEtPpULjng3plEH0qvwRrtzqTsek4Z_4NUxReNLwyxqgLXXaE8vXn1V1XhNlnbibGqPnbyZ3dF0ukW0cXjQIL0aFpQ_b6b9ddPOXQuYxWc7MQLuO-W77GyJKRFr7YcoTUoIVWOVOyTgDt6FEmZrqEN15I1HyAp0wrnF275cpsRa-zEAPk4E4qTomqJJ_P0VaOY_45rxUWLq26URP5HjtQThxMcW2gl8YFhb4KFZ364V-3_eiWdZoH67hWxk"/>
-</div>
-<!-- Main Hero Content -->
-<div class="relative z-20 text-center px-6 max-w-7xl mx-auto">
-<!-- Graffiti Accent Graphic -->
-<div class="absolute -top-12 -left-12 md:-top-24 md:-left-24 opacity-30 select-none pointer-events-none">
-<span class="material-symbols-outlined text-[120px] md:text-[200px] text-primary" style="font-variation-settings: 'wght' 100;">
-                    format_paint
-                </span>
-</div>
-<!-- Typography Cluster -->
-<div class="space-y-4">
-<p class="hero-subtitle font-label tracking-[0.4em] text-primary-fixed uppercase text-sm md:text-base font-semibold">ESTABLISHED IN THE UNDERGROUND</p>
-<h1 class="hero-title font-headline text-[12vw] md:text-[10rem] leading-[0.85] font-black tracking-tighter uppercase cinematic-glow text-primary">
-                    WEED<br/>O'CLOCK
-                </h1>
-<div class="hero-buttons flex flex-col md:flex-row items-center justify-center gap-6 mt-12">
-<button class="group relative px-10 py-5 bg-primary text-on-primary font-headline font-black tracking-tighter uppercase text-xl hover:bg-primary-fixed-dim transition-all duration-300 active:scale-95 shadow-xl">
-                        EXPLORE DROPS
-                        <span class="absolute -top-1 -right-1 w-3 h-3 bg-secondary-container"></span>
-</button>
-<button class="px-10 py-5 border border-primary/20 text-primary font-headline font-black tracking-tighter uppercase text-xl hover:bg-primary/10 transition-all duration-300 active:scale-95 backdrop-blur-sm">
-                        CONTACT CONCIERGE
-                    </button>
-</div>
-</div>
-<!-- Graffiti Secondary Accent -->
-<div class="absolute -bottom-20 -right-12 opacity-20 select-none pointer-events-none">
-<span class="material-symbols-outlined text-[100px] md:text-[160px] text-secondary-container">
-                    texture
-                </span>
-</div>
-</div>
-<!-- Scroll Indicator -->
-<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-2">
-<span class="font-label text-[10px] tracking-[0.3em] uppercase text-on-surface-variant opacity-60">SCROLL TO ASCEND</span>
-<div class="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent"></div>
-</div>
-</main>
-<!-- Bento Grid Section (Editorial Depth) -->
-<section class="reveal bg-surface py-32 px-12 relative overflow-hidden">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
-<div class="md:col-span-8 h-[600px] bg-surface-container-low relative overflow-hidden group">
-<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Editorial streetwear photography of a model in a dark urban alley with neon gold reflections on a leather jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXVHQwGWEydt_KJc_fLJkscWICTONf92n9oH2ezAOsZyCjcpB3zq5QS6J7f7_0rjRSAstK3xynXi4XVEjc_aDND32HSRYYL5GLphd5M4vwrJCRsn8FdRYT0Db1gYnYc4aOW-CmqwRI8CrgGErP6vQbZ_I2fyB-4zz7YROXsZWwNaZ8bw3iw4_n7JMILg9rDRB9tjhSQgW8hZqGd2Tp2Zzxj0cwh5qm2foGond1hHOxF2Vz1ZVjPfTeOlFJbs0Cg5ibqeQqPII04xo"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-<div class="absolute bottom-12 left-12">
-<h3 class="font-headline text-5xl font-black text-white tracking-tighter uppercase">THE 00:00 COLLECTION</h3>
-<p class="font-body text-on-surface-variant mt-2 max-w-md">Limited release hardware and apparel for the midnight curators.</p>
-</div>
-</div>
-<div class="md:col-span-4 space-y-6">
-<div class="h-[288px] bg-primary-container relative p-8 flex flex-col justify-end">
-<span class="material-symbols-outlined text-4xl mb-auto text-on-primary-container">verified</span>
-<h4 class="font-headline text-3xl font-black text-on-primary-container leading-none uppercase">CURATED STRAINS</h4>
-<p class="font-body text-on-primary-container/80 text-sm mt-2">Grown in high-fidelity environments for the discerning palate.</p>
-</div>
-<div class="h-[288px] bg-surface-container-high relative overflow-hidden group">
-<img alt="" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Macro photography of a high-end gold plated accessory on a black velvet surface with sharp directional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbhuIomF_7afr0qgyIiYSWYRiKLKBmA5hamQ78HlvEvizHScK6lqq8srgZUl9UktEf0w4TmUBqqHne5wtrja3emV7fyP99EaviD0b8WKqotseJS-paNbTUcXxNHWe931hpvOuxjFfPQtsn-6X-mV5g-WIPZGPQL9CYg4dgKtZL7BEdsloDt7RVswWIXQOvRiiK8PPqyOTEMO7YpGcvxYu98QbKGWH7x1xktIep8wmM8uCdinrVZ7pCVKn15c0km5Ln59pqJzmUp-4"/>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer Shell -->
-<footer class="reveal bg-neutral-950 w-full py-12 px-12 border-t border-neutral-800/20 flex flex-col md:flex-row justify-between items-center gap-8">
-<div class="text-lg font-black text-white font-headline">WEED O'CLOCK</div>
-<div class="text-neutral-500 font-['Manrope'] text-xs tracking-widest uppercase text-center md:text-left">
-            © 2024 WEED O'CLOCK. ALL RIGHTS RESERVED. HIGH-END URBAN CURATION.
-        </div>
-<div class="flex gap-8">
-<a class="font-['Manrope'] text-xs tracking-widest uppercase text-neutral-500 hover:text-white transition-colors" href="#">PRIVACY</a>
-<a class="font-['Manrope'] text-xs tracking-widest uppercase text-neutral-500 hover:text-white transition-colors" href="#">TERMS</a>
-<a class="font-['Manrope'] text-xs tracking-widest uppercase text-neutral-500 hover:text-white transition-colors" href="#">CONTACT</a>
-<a class="font-['Manrope'] text-xs tracking-widest uppercase text-neutral-500 hover:text-white transition-colors" href="#">INSTAGRAM</a>
-</div>
-</footer>
 
-<script>
-  gsap.to(".hero-subtitle", {
-    y: 0,
-    opacity: 1,
-    duration: 0.9,
-    ease: "power3.out",
-    delay: 0.2
-  });
-
-  gsap.to(".hero-title", {
-    y: 0,
-    opacity: 1,
-    duration: 1.2,
-    ease: "power4.out",
-    delay: 0.4
-  });
-
-  gsap.to(".hero-buttons", {
-    y: 0,
-    opacity: 1,
-    duration: 1,
-    ease: "power3.out",
-    delay: 0.9
-  });
-
-  const reveals = document.querySelectorAll(".reveal");
-
-  const revealOnScroll = () => {
-    const triggerBottom = window.innerHeight * 0.88;
-
-    reveals.forEach((el) => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < triggerBottom) {
-        el.classList.add("show");
-      }
-    });
-  };
-
-  window.addEventListener("scroll", revealOnScroll);
-  window.addEventListener("load", revealOnScroll);
-</script>
-
-</body></html>
+<body class="bg-background text-white">
